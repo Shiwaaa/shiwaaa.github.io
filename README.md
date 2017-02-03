@@ -1,1 +1,0 @@
-# shiwaaa.github.io
