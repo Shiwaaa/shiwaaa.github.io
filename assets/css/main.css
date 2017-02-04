@@ -912,7 +912,7 @@
 		position: relative;
 		-moz-column-count: 4;
 		-webkit-column-count: 4;
-		column-count: 3;
+		column-count: 5;
 		-moz-column-gap: 1em;
 		-webkit-column-gap: 1em;
 		column-gap: 1em;
