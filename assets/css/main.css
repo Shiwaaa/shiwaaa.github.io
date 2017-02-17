@@ -719,7 +719,7 @@
 		top: 0;
 		width: 22.5em;
 		height: 100%;
-		background: #fff;
+		background: #232020; /*#fff*/
 		outline: 0;
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -767,7 +767,7 @@
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 950px) {
 
 			#main {
 				background: rgba(255, 255, 255, 0.925);
@@ -787,7 +787,7 @@
 				-ms-transition: opacity 0.5s ease, visibility 0.5s;
 				transition: opacity 0.5s ease, visibility 0.5s;
 				width: 100%;
-				background: #fff;
+				background: #232020; /*#fff*/
 				text-align: center;
 			}
 
