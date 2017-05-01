@@ -1,7 +1,7 @@
 body {
   padding-top: 20px;
 /**  padding-bottom: 40px; **/
-  background-color: #292b2c;
+  background-color: #070707;
 }
 
 .ctext {
@@ -11,6 +11,12 @@ body {
 
 .cmargin { margin-top:1.5%;
            margin-bottom:1.5%;
+}
+
+
+.bg-dark
+{
+  background-color: #070707;
 }
 
 /* Sticky footer styles
@@ -30,7 +36,7 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
-  background-color: #292b2c;
+  background-color: #070707;
 }
 
 /* important */
