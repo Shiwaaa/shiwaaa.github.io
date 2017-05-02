@@ -2,28 +2,28 @@
 <html lang="en">
   <head>
 	<title>Shiwa Deblaere - Portfolio</title>
+    <meta name="description" content="Shiwa Deblaere is concept artist from Ghent, Belgium."> 
+      
+    <!-- Remove when adding domain name -->
+	<meta name="robots" content="noindex">
+      
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       
       
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->  
+    <!-- jQuery first, then Tether, then Bootstrap JS, then lightbox -->  
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="js/jquery.magnific-popup.js"></script>  
-    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>  
+    <script src="js/jquery.magnific-popup.js"></script>   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
    
       
     <!-- Custom styles -->
     <link href="css/main.css" rel="stylesheet"> 
-    <link href="css/magnific-popup.css" rel="stylesheet">   
-    
-    
-      
-      
+    <link href="css/magnific-popup.css" rel="stylesheet">    
   </head>
     
   <body>
@@ -38,19 +38,16 @@
 				  <p> <a href="mailto:shiwa.deblaere@gmail.com">shiwa.deblaere@gmail.com</a></p>
                   </small>      
               </div>
-              
               <div class="col-md-3 cmargin">
                   <a href="img/fulls/crash.jpg" class="image-popup-no-margins"> 
                   <img src="img/thumbs/crash.jpg" class="img-fluid" alt="Responsive image">
                   </a>      
-              </div>
-              
+              </div> 
               <div class="col-md-3 cmargin">
                   <a href="img/fulls/frogknight.jpg" class="image-popup-no-margins"> 
                   <img src="img/thumbs/frogknight.jpg" class="img-fluid" alt="Responsive image">
                   </a>      
               </div>
-              
               <div class="col-md-3 cmargin">
                   <a href="img/fulls/fmar.jpg" class="image-popup-no-margins"> 
                   <img src="img/thumbs/fmar.jpg" class="img-fluid" alt="Responsive image">
@@ -111,43 +108,41 @@
       </div>
           
 		  
-	<footer class="footer">
+<footer class="footer">
       <div class="container text-center">
         <span class="text-muted">© Shiwa Deblaere.</span>
       </div>
-    </footer>
+</footer>
       
 
-        <script type="text/javascript">     
-$(document).ready(function() {
+      <script type="text/javascript">     
+        $(document).ready(function() {
+
+            $('.image-popup-no-margins').magnificPopup({
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                },
+
+                type: 'image',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                fixedContentPos: true,
+                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                image: {
+                    verticalFit: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300 // don't foget to change the duration also in CSS
+                }
+
+            });
+
+        });
+      </script>
+  
+</body>
     
-	$('.image-popup-no-margins').magnificPopup({
-        
-        gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-        
-		type: 'image',
-		closeOnContentClick: true,
-		closeBtnInside: false,
-		fixedContentPos: true,
-		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-		image: {
-			verticalFit: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300 // don't foget to change the duration also in CSS
-		}
-        
-	});
-    	
-
-});
-        </script>
-      
-   
-  </body>
 </html>
