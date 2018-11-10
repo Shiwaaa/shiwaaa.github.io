@@ -46,3 +46,8 @@ a {
 color: #969696 !important;
 font-family: inherit !important;    
 }
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
